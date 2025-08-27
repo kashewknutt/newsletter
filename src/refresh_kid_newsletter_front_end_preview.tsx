@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 // Refresh Kid brand palette - corrected based on website
 const RK = {
@@ -90,9 +91,10 @@ export default function NewsletterPreview() {
                 Teacher of the Week
               </h3>
               <div className="mt-4 flex gap-4">
-                <img 
+                <Image 
                   src="https://via.placeholder.com/64" 
-                  alt="Teacher" 
+                  alt="Teacher"
+                  fill
                   className="h-16 w-16 rounded-full object-cover border-4"
                   style={{borderColor: RK.primary}}
                 />
@@ -101,13 +103,13 @@ export default function NewsletterPreview() {
                     Oliver M. — AP English & SAT ELA (U.S. Certified)
                   </p>
                   <p className="text-sm" style={{color: RK.gray}}>
-                    Fun fact: loves Chicago deep-dish 🍕
+                    Fun fact: loves Chicago deep-dish pizza!
                   </p>
                   <button 
                     className="mt-3 px-4 py-2 text-sm font-semibold text-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
                     style={{background: RK.accent}}
                   >
-                    See Oliver's bio
+                    See Oliver&apos;s bio
                   </button>
                 </div>
               </div>
@@ -121,9 +123,10 @@ export default function NewsletterPreview() {
                 Student of the Week
               </h3>
               <div className="mt-4 flex gap-4">
-                <img 
+                <Image 
                   src="https://via.placeholder.com/64" 
                   alt="Student" 
+                  fill
                   className="h-16 w-16 rounded-full object-cover border-4"
                   style={{borderColor: RK.accent}}
                 />
@@ -132,7 +135,7 @@ export default function NewsletterPreview() {
                     Aditya K. — +140 points on SAT practice in 4 weeks 🎉
                   </p>
                   <p className="text-sm" style={{color: RK.gray}}>
-                    "The reading strategies finally clicked!"
+                    &ldquo;The reading strategies finally clicked!&rdquo;
                   </p>
                 </div>
               </div>
@@ -230,7 +233,7 @@ export default function NewsletterPreview() {
                 Quick Brain Teaser
               </h3>
               <p className="mt-3" style={{color: RK.gray}}>
-                If <em>f(x) = 2x² + 3</em>, what's <em>f(5)</em>? Reply with your answer — first 5 win a free worksheet!
+                If <em>f(x) = 2x² + 3</em>, what&apos;s <em>f(5)</em>? Reply with your answer — first 5 win a free worksheet!
               </p>
               <div className="mt-2 text-sm" style={{color: RK.gray}}>
                 Tip: Plug in x = 5.
@@ -245,7 +248,7 @@ export default function NewsletterPreview() {
                 Parent Insider
               </h3>
               <p className="mt-3" style={{color: RK.gray}}>
-                Middle school GPA isn't official, but it can influence high‑school placement. Keep weekly tabs on skills, not just grades.
+                Middle school GPA isn&apos;t official, but it can influence high‑school placement. Keep weekly tabs on skills, not just grades.
               </p>
               <button 
                 className="mt-3 px-4 py-2 text-sm font-semibold rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
@@ -285,8 +288,8 @@ export default function NewsletterPreview() {
             — Live online tutoring • Very affordable • U.S. & non‑local teachers
           </p>
           <p className="mt-2">Website • YouTube • Instagram • Facebook • WhatsApp Channel</p>
-          <p className="mt-2">You're receiving this because you opted in at RefreshKid.com.</p>
-          <p className="mt-1">© 2025 Refresh Kid LLC</p>
+          <p className="mt-2">You&apos;re receiving this because you opted in at RefreshKid.com.</p>
+          <p className="mt-1"> &copy; 2025 Refresh Kid LLC</p>
         </footer>
       </div>
     </div>
