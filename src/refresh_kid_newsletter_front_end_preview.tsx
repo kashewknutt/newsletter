@@ -91,13 +91,15 @@ export default function NewsletterPreview() {
                 Teacher of the Week
               </h3>
               <div className="mt-4 flex gap-4">
+                <div className="h-16 w-16 relative">
                 <Image 
-                  src="https://via.placeholder.com/64" 
+                  src="" 
                   alt="Teacher"
                   fill
-                  className="h-16 w-16 rounded-full object-cover border-4"
+                  className="rounded-full object-cover border-4"
                   style={{borderColor: RK.primary}}
                 />
+                </div>
                 <div className="flex-1">
                   <p className="font-semibold" style={{color: RK.neutral}}>
                     Oliver M. — AP English & SAT ELA (U.S. Certified)
@@ -123,13 +125,15 @@ export default function NewsletterPreview() {
                 Student of the Week
               </h3>
               <div className="mt-4 flex gap-4">
-                <Image 
-                  src="https://via.placeholder.com/64" 
-                  alt="Student" 
-                  fill
-                  className="h-16 w-16 rounded-full object-cover border-4"
+                <div className="h-16 w-16 relative">
+                  <Image
+                    src=""
+                    alt="Student"
+                    fill
+                    className="rounded-full object-cover border-4"
                   style={{borderColor: RK.accent}}
                 />
+                </div>
                 <div className="flex-1">
                   <p className="font-semibold" style={{color: RK.neutral}}>
                     Aditya K. — +140 points on SAT practice in 4 weeks 🎉
