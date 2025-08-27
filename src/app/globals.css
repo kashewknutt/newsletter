@@ -1,0 +1,48 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+/* Refresh Kid Brand Colors */
+:root {
+  --rk-primary: #4aafff;
+  --rk-primary-dark: #2494db;
+  --rk-accent: #f16b0e;
+  --rk-accent-light: #ff9a4a;
+  --rk-neutral: #824006;
+  --rk-soft: #f8b397;
+  --background: #ffffff;
+  --foreground: #1f1f1f;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --rk-cream: #23272a;
+    --rk-charcoal: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--rk-teal);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--rk-charcoal);
+}
+
+/* Utility classes for newsletter preview (optional, for fallback) */
+.rk-shadow {
+  box-shadow: 0 2px 8px 0 rgba(31,42,48,0.08);
+}
